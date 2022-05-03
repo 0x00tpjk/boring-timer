@@ -1,0 +1,59 @@
+@keyframes button {
+    from {
+        background-color: Transparent;
+    }
+    to {
+        background-color: rgb(175, 175, 175);
+    }
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    font-family: 'JetBrainsMono';
+    background-color: rgb(58, 58, 58);
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    height: 70%;
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+
+}
+button {
+    background-color: transparent;
+    border: black 2px solid;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;  
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+button:hover {
+    animation: button 0.2s linear ;
+    color: black;
+    background-color: rgb(175, 175, 175);
+    color: black;
+}
+
+.btn-text {
+    font-family: 'JetBrainsMono';
+    font-size: 20px;
+    color: black;
+}
+
+.timer {
+    font-size: 50;
+    padding-top: 10%;
+}
